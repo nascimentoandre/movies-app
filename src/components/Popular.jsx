@@ -21,14 +21,9 @@ const Popular = () => {
   // Posters dos filmes
   return (
     <>
-      <Poster posterPath={popular.results[0].poster_path}/>
-      <Poster posterPath={popular.results[1].poster_path}/>
-      <Poster posterPath={popular.results[2].poster_path}/>
-      <Poster posterPath={popular.results[3].poster_path}/>
-      <Poster posterPath={popular.results[4].poster_path}/>
-      <Poster posterPath={popular.results[5].poster_path}/>
-      <Poster posterPath={popular.results[6].poster_path}/>
-      <Poster posterPath={popular.results[7].poster_path}/>
+      {popular.results.map(movie => (
+        <Poster key={movie.id} posterPath={movie.poster_path} />  
+      ))}
     </>
   );
 }
