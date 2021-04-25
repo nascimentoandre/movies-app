@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Popular from "../components/Popular";
 import { getMovie } from "../redux/ducks/movie";
-import { HomeContainer, OptionsContainer, Title } from "../styles/screens/home";
+import { HomeContainer, OptionsContainer, PosterContainer, Title } from "../styles/screens/home";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -20,7 +20,9 @@ const Home = () => {
         <Title>Mais votados</Title>
         <Title>Em breve</Title>
       </OptionsContainer>
-      <Popular />
+      <PosterContainer>
+        <Popular />
+      </PosterContainer>
     </HomeContainer>
   );
 }
