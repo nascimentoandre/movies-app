@@ -6,7 +6,7 @@ import { HomeContainer, OptionsContainer, PosterContainer, Title } from "../styl
 import  BottomBar from "../components/BottomBar";
 import { ScrollView } from "react-native";
 
-const Home = () => {
+const Home = ({ navigation }) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const Home = () => {
         <Title>Em breve</Title>
       </OptionsContainer>
       <ScrollView contentContainerStyle={scrollStyle} scrollEnabled={true}>
-        <Popular />
+        <Popular navigation={navigation} />
       </ScrollView>
       <BottomBar />
     </HomeContainer>

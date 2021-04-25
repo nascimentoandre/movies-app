@@ -5,7 +5,7 @@ import { getPopular } from "../redux/ducks/popular";
 import Loading from "./Loading";
 import Poster from "./Poster";
 
-const Popular = () => {
+const Popular = ({ navigation }) => {
   // importando dados
   const dispatch = useDispatch();
 
@@ -22,7 +22,7 @@ const Popular = () => {
   return (
     <>
       {popular.results.map(movie => (
-        <Poster key={movie.id} posterPath={movie.poster_path} />  
+        <Poster id={movie.id} key={movie.id} navigation={navigation} posterPath={movie.poster_path} />  
       ))}
     </>
   );
