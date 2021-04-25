@@ -3,7 +3,7 @@ export const GET_MOVIE = "GET_MOVIE";
 const SET_MOVIE = "SET_MOVIE"
 
 export const getMovie = () => ({
-  type: GET_MOVIE
+  type: GET_MOVIE,
 });
 
 export const setMovie = (movie) => ({ //ver id
