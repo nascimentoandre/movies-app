@@ -9,7 +9,3 @@ export const BarStyle = styled.View`
   background-color: ${props => props.theme.colors.bar};
   margin-top: 10px;
 `
-
-export const Item = styled.TouchableHighlight`
-  color: ${props => props.theme.colors.icon2};
-`
