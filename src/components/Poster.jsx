@@ -1,11 +1,16 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Image, TouchableOpacity } from "react-native";
+import { PosterStyle } from "../styles/screens/home";
 
-const Poster = () => {
+const Poster = (props) => {
+  const { posterPath } = props;
+  const path = "https://image.tmdb.org/t/p/w500" + posterPath;
   return (
-    <View>
-      <Text>poster</Text>
-    </View>
+    <>
+    <TouchableOpacity>
+      <PosterStyle source={{uri: path}}/>
+    </TouchableOpacity>
+    </>
   );
 }
 
