@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 import Popular from "../components/Popular";
 import { getMovie } from "../redux/ducks/movie";
 import { HomeContainer, OptionsContainer, PosterContainer, Title } from "../styles/screens/home";
+import  BottomBar from "../components/BottomBar";
+import { ScrollView } from "react-native";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -20,11 +22,20 @@ const Home = () => {
         <Title>Mais votados</Title>
         <Title>Em breve</Title>
       </OptionsContainer>
-      <PosterContainer>
+      <ScrollView contentContainerStyle={scrollStyle} scrollEnabled={true}>
         <Popular />
-      </PosterContainer>
+      </ScrollView>
+      <BottomBar />
     </HomeContainer>
   );
+}
+
+const scrollStyle = {
+  alignItems: "center",
+  justifyContent: "space-around",
+  width: "100%",
+  flexDirection: "row",
+  flexWrap: "wrap",
 }
 
 export default Home;

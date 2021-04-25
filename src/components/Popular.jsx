@@ -25,6 +25,10 @@ const Popular = () => {
       <Poster posterPath={popular.results[1].poster_path}/>
       <Poster posterPath={popular.results[2].poster_path}/>
       <Poster posterPath={popular.results[3].poster_path}/>
+      <Poster posterPath={popular.results[4].poster_path}/>
+      <Poster posterPath={popular.results[5].poster_path}/>
+      <Poster posterPath={popular.results[6].poster_path}/>
+      <Poster posterPath={popular.results[7].poster_path}/>
     </>
   );
 }

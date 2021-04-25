@@ -4,7 +4,7 @@ export const HomeContainer = styled.View`
   flex: 1;
   background-color: ${props => props.theme.colors.background};
   align-items: center;
-  padding-top: 80px;
+  padding-top: 70px;
   justify-content: flex-start;
 `
 
@@ -14,7 +14,7 @@ export const OptionsContainer = styled.View`
   justify-content: space-around;
   flex-direction: row;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 `
 export const Title = styled.Text`
   color: ${props => props.theme.colors.text};
@@ -22,17 +22,8 @@ export const Title = styled.Text`
 `
 
 export const PosterStyle = styled.Image`
-  width: 150px;
+  width: 160px;
   height: 230px;
   border-radius: 15px;
   margin-bottom: 8px;
-`
-
-export const PosterContainer = styled.View`
-  flex: 0.8;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: 1px solid white;
 `
