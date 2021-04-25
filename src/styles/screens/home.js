@@ -4,9 +4,18 @@ export const HomeContainer = styled.View`
   flex: 1;
   background-color: ${props => props.theme.colors.background};
   align-items: center;
-  justify-content: center;
+  padding-top: 80px;
+  justify-content: flex-start;
 `
 
+export const OptionsContainer = styled.View`
+  flex: 0.1;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+`
 export const Title = styled.Text`
-  font-size: 40px;
+  color: ${props => props.theme.colors.text};
+  font-size: 20px;
 `
