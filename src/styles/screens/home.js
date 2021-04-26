@@ -16,7 +16,6 @@ export const OptionsContainer = styled.View`
   margin-bottom: 25px;
 `
 export const Title = styled.Text`
-  color: ${props => props.theme.colors.text};
   font-size: 25px;
 `
 
