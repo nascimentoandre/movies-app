@@ -13,10 +13,11 @@ const BottomBar = ({ navigation }) => {
     <>
     {showSearch && <View style={{width: "100%", height: 40, borderWidth: 1,  borderColor: "#d3d3d3"}}>
       <TextInput 
-      placeholder="   Busque milhares de filmes..."
+      placeholder="Buscar filmes..."
       placeholderTextColor="#d3d3d3"
+      style={{color: "white", "marginLeft": 15}}
       onChangeText={(val) => setSearch(val)} 
-      onSubmitEditing={() => console.log(search)}/>
+      onSubmitEditing={() => navigation.navigate("Query", { search })}/>
     </View>}
     <BarStyle>
       <TouchableHighlight onPress={() => navigation.navigate("Home")}>
