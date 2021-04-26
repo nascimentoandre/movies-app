@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Text } from "react-native";
 import { useSelector, useDispatch } from "react-redux";
 import { getPopular } from "../redux/ducks/popular";
 import Loading from "./Loading";

@@ -9,8 +9,7 @@ export const HomeContainer = styled.View`
 `
 
 export const OptionsContainer = styled.View`
-  flex: 0.1;
-  align-items: center;
+  align-items: center; 
   justify-content: space-around;
   flex-direction: row;
   width: 100%;
@@ -18,7 +17,7 @@ export const OptionsContainer = styled.View`
 `
 export const Title = styled.Text`
   color: ${props => props.theme.colors.text};
-  font-size: 20px;
+  font-size: 25px;
 `
 
 export const PosterStyle = styled.Image`

@@ -1,26 +1,29 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React, { useState } from "react";
+import { TouchableOpacity } from "react-native";
 import Popular from "../components/Popular";
-import { getMovie } from "../redux/ducks/movie";
+import Top from "../components/Top";
 import { HomeContainer, OptionsContainer, PosterContainer, Title } from "../styles/screens/home";
 import  BottomBar from "../components/BottomBar";
 import { ScrollView } from "react-native";
 
 const Home = ({ navigation }) => {
-  const dispatch = useDispatch();
+  const [tab, setTab] = useState(0);
 
-  useEffect(() => {
-    dispatch(getMovie());
-  }, [dispatch]);
-
-  const movie = useSelector(state => state.movie.movie);
+  const handleTab = () => {
+    if (tab === 0) setTab(1);
+    else if (tab === 1) setTab(0);
+    console.log(tab);
+  }
 
   return (
     <HomeContainer>
       <OptionsContainer>
-        <Title style={{color: "#f52be0"}}>Populares</Title>
-        <Title>Mais votados</Title>
-        <Title>Em breve</Title>
+        <TouchableOpacity onPress={handleTab}>
+          <Title style={{color: "#f52be0"}}>Populares</Title>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={handleTab}>
+          <Title>Mais votados</Title>
+        </TouchableOpacity>
       </OptionsContainer>
       <ScrollView contentContainerStyle={scrollStyle} scrollEnabled={true}>
         <Popular navigation={navigation} />
