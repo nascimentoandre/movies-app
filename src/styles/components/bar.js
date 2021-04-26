@@ -7,5 +7,4 @@ export const BarStyle = styled.View`
   justify-content: space-around;
   flex-direction: row;
   background-color: ${props => props.theme.colors.bar};
-  margin-top: 10px;
 `
