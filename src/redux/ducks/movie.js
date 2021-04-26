@@ -7,7 +7,7 @@ export const getMovie = (id) => ({
   payload: id
 });
 
-export const setMovie = (movie) => ({ //ver id
+export const setMovie = (movie) => ({ 
   type: SET_MOVIE,
   movie: movie
 });

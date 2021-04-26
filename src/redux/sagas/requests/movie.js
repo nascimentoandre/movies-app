@@ -15,5 +15,4 @@ export function requestGetMovie(id) {
   } catch (err) {
     console.log(err);
   }
-
 }
