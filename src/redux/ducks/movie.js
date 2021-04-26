@@ -2,8 +2,9 @@
 export const GET_MOVIE = "GET_MOVIE";
 const SET_MOVIE = "SET_MOVIE"
 
-export const getMovie = () => ({
+export const getMovie = (id) => ({
   type: GET_MOVIE,
+  payload: id
 });
 
 export const setMovie = (movie) => ({ //ver id
