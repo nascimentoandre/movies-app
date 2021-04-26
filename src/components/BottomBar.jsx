@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import { faHome, faSearch } from "@fortawesome/free-solid-svg-icons";
 import theme from "../styles/theme";
 
-const BottomBar = () => {
+const BottomBar = ({ navigation }) => {
   return (
     <BarStyle>
-      <TouchableHighlight>
+      <TouchableHighlight onPress={() => navigation.navigate("Home")}>
         <FontAwesomeIcon icon={ faHome } color={ theme.colors.icon2 }  size={25}/>
       </TouchableHighlight>
       <TouchableHighlight>

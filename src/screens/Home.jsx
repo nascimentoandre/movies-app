@@ -33,7 +33,7 @@ const Home = ({ navigation }) => {
       <ScrollView contentContainerStyle={scrollStyle} scrollEnabled={true}>
         {tab === 0 ? <Popular navigation={navigation} /> : <Top navigation={navigation} /> }
       </ScrollView>
-      <BottomBar />
+      <BottomBar navigation={navigation} />
     </HomeContainer>
   );
 }

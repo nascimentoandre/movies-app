@@ -4,12 +4,11 @@ import { getMovie } from "../redux/ducks/movie";
 import { DetailImage, MovieContainer, Info, InfoText, Title } from "../styles/screens/movie";
 import Loading from "../components/Loading";
 import BottomBar from "../components/BottomBar";
-import ImgBg from "../styles/screens/login";
 import { ScrollView } from "react-native";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-const Movie = ({ route }) => {
+const Movie = ({ route, navigation }) => {
   const dispatch = useDispatch();
 
   id = route.params.id;
@@ -36,7 +35,7 @@ const Movie = ({ route }) => {
           <InfoText>{movie.overview}</InfoText>
         </Info>
       </ScrollView>
-      <BottomBar />
+      <BottomBar navigation={navigation} />
     </MovieContainer>
   );
 }
