@@ -4,7 +4,7 @@ import { View, Text } from "react-native";
 const Loading = () => {
   return (
     <View>
-      <Text>Loading...</Text>
+      <Text style={{color: "#d3d3d3"}}>Loading...</Text>
     </View>
   );
 }
