@@ -1,3 +1,5 @@
+![Preview-Screens](https://github.com/nascimentoandre/movies-app/blob/main/prints/1.png)
+
 # Sobre
 
 Este é um aplicativo construído com React Native que permite visualizar uma lista com os filmes mais populares e mais bem avaliados do dia, além de realizar buscas por filmes específicos. Para tanto, foi utilizada a API de filmes [The Movie Database](https://developers.themoviedb.org/3).
