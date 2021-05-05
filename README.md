@@ -1,4 +1,4 @@
-![Preview-Screens](https://github.com/nascimentoandre/movies-app/blob/main/prints/1.png)
+![Preview-Screens](https://github.com/nascimentoandre/movies-app/blob/main/prints/1.jpg)
 
 # Sobre
 
